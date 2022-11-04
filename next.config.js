@@ -4,7 +4,9 @@ const nextConfig = {
   swcMinify: true,
   images: {
 	unoptimized: true,
-  }
+  },
+  basePath: "/hello_webgl",
+  assetPrefix: "/hello_webgl",
 }
 
 module.exports = nextConfig
