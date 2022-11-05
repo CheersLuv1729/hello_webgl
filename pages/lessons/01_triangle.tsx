@@ -74,10 +74,14 @@ gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
 gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);`;
 
 function triangle (canvas: HTMLCanvasElement) {
+console.log("Triangle");
 
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 const gl = canvas.getContext("webgl") as WebGLRenderingContext;
+console.log(gl);
+
+
 gl.clearColor(1.0, 0.0, 0.0, 1.0);
 gl.clear(gl.COLOR_BUFFER_BIT);
 const shader = (()=>{
